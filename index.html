@@ -1,0 +1,115 @@
+<!--    DESCRIÇÃO
+
+    Criando página principal do site da NETFLIX utilizando tecnologias: HTML5, CSS3 e JavaScript. 
+    Neste projeto:   
+        a. como estruturar um layout; 
+        b. técnicas de CSS3 com containers e variáveis; 
+        c. como posicionar os elementos com Flexbox; 
+        d. como utilizar plugins Jquery a favor da  aplicação.
+
+    Utilizando base de Estudos do Digital Innovation One    
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Darcisio Almeida">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/responsive.css"> <!--responsividade-->
+        <!-- Inserindo no CSS os arquivos JQuery Owl--->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+        <title>Clone Capa da NETFLIX</title>
+    </head>
+    <body>
+        <!--Start MENU-->
+            <header>
+                <div class="container">
+                    <h2 class="logo">NETFLIX</h2>
+                    <nav>
+                        <a href="#">Inicio</a>
+                        <a href="#">Séries</a>
+                        <a href="#">Filmes</a>
+                        <a href="#">Documentários</a>
+                    </nav>
+                </div>
+            </header>
+        <!-- End MENU-->
+
+        <!----- Start PRINCIPAL-->
+            <main>
+                <div class="filme-principal">
+                    <div class="container">
+                        <h3 class="titulo">LUPIN (2021)</h3>
+                        <p class="descricao">
+                            Na adolescência, a vida de Assane Diop dá uma guinada radical quando seu pai morre após ser acusado de um crime que não cometeu. Vinte e cinco anos depois, Assane se inspira em "Arsène Lupin, o Ladrão de Casaca" para vingá-lo.
+                        </p>
+                        <div class="botoes">
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i> 
+                                ASSISTIR AGORA
+                            </button>
+                            <button role="button" class="botao">
+                                <i class="fas fa-info-circle"></i>
+                                MAIS INFORMAÇÕES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        <!-----End PRINCIPAL-->
+
+        <!-- Start CARROSEL FILMES -->
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="box-filmes">
+                        <img src="images/filme1.jpg" alt="Filme Ponto Vermelho">
+                    </div> 
+                    <div class="box-filmes">
+                        <img src="images/filme2.jpg" alt="Violação">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/filme3.jpg" alt="AVA">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie1.jpg" alt="Série Lucifer">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie2.jpg" alt="Série Cobra KaII">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie3.jpg" alt="Série La Casa de Papel">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie4.jpg" alt="Série Lista Negra">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie5.jpg" alt="Série Miraculus Ladybug">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie6.jpg" alt="Série Os Simpsons">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie7.jpg" alt="Série Agentes da Shield">
+                    </div>
+                    <div class="box-filmes">
+                        <img src="images/serie8.jpg" alt="Série Sam & Cat">
+                    </div>
+                </div>
+            </div>
+        <!-- End CARROSEL FILMES -->
+
+        <!-- Scripts JavaScript-->
+            <!-- Font Awesome -->
+                <script src="https://kit.fontawesome.com/a607e93130.js" crossorigin="anonymous"></script>  
+            <!-- Inserindo no JS os arquivos JQuery Owl--->
+                <script src="js/owl/jquery.min.js"></script>
+                <script src="js/owl/owl.carousel.min.js"></script>
+            <!-- Setup JS--->
+                <script src="js/setup.js"></script>
+    </body>
+</html>
